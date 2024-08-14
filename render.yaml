@@ -3,9 +3,10 @@ services:
   - type: web
     plan: free
     env: docker
-    name: rq-workeer
-    dockerContext: .
-    dockerfilePath: dockerfile
+    name: rq-worker
+    runtime: image
+    image:
+     url: dalongrong/rq-worker:v2
     envVars: 
       - key: REDIS_URL
         fromGroup: 
