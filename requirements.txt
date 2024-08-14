@@ -1,0 +1,4 @@
+rq
+requests
+fastapi
+uvicorn

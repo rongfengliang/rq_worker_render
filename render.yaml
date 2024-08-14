@@ -1,0 +1,13 @@
+previewsEnabled: false
+services:
+  - type: web
+    plan: free
+    env: docker
+    name: rq-workeer
+    dockerContext: .
+    dockerfilePath: dockerfile
+    envVars: 
+      - key: REDIS_URL
+        fromGroup: 
+          name: RQ
+          property: REDIS_URL
