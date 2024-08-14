@@ -9,6 +9,5 @@ services:
      url: dalongrong/rq-worker:v2
     envVars: 
       - key: REDIS_URL
-        fromGroup: 
-          name: RQ
+        fromGroup: RQ
           property: REDIS_URL
