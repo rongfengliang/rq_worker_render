@@ -6,6 +6,6 @@ services:
     name: rq-worker
     runtime: image
     image:
-     url: dalongrong/rq-worker:x-v1
+     url: dalongrong/rq-worker:x-v2
     envVars: 
        - fromGroup: RQ
