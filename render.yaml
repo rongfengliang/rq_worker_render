@@ -6,6 +6,6 @@ services:
     name: rq-worker
     runtime: image
     image:
-     url: ghcr.io/rongfengliang/rq-worker:x-v16
+     url: ghcr.io/rongfengliang/rq-worker:x-v17
     envVars: 
        - fromGroup: RQ
